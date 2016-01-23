@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>dungeon (editor)</title>
+	<link href="http://fonts.googleapis.com/css?family=Alegreya:700italic,400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/editor.css">
+	<link rel="stylesheet" type="text/css" href="css/sunny/jquery-ui-1.10.3.custom.min">
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/editor-ui.js"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript" src="js/input.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/mode6x.js"></script>
+	<script type="text/javascript" src="js/editor.js"></script>
+</head>
+<body>
+	<div id="fps"></div>
+	<p id="mensaje">&nbsp;</p>
+	<div id="leftpanel" class="leftpanel">
+		<div id="tabpanel">
+			<ul>
+				<li><a href="#tab-mapa">Mapa</a></li>
+				<li><a href="#tab-celdas">Celdas</a></li>
+				<li><a href="#tab-mostrar">Mostrar</a></li>
+			</ul>
+			<div id="tab-mapa">
+				<h3>Operaciones</h3>
+				<div>
+					<button id="mapa-nuevo">Nuevo</button>
+					<button id="mapa-abrir">Abrir</button>
+					<button id="mapa-guardar">Guardar</button>
+				</div>
+				<h3>Metadatos</h3>
+				<div>
+					<div>
+						<label for="mapa-titulo">Título del mapa:</label>
+						<input type="text" id="mapa-titulo">
+					</div>
+					<div>
+						<label for="mapa-autor">Autor:</label>
+						<input type="text" id="mapa-autor">
+					</div>
+					<div>
+						<label for="mapa-detalles">Detalles:</label>
+						<textarea id="mapa-detalles"></textarea>
+					</div>
+				</div>
+			</div>
+			<div id="tab-celdas">
+				<div id="tipodecelda">
+				    <input type="radio" id="tipo-celda-vacia" name="tipo-celda" checked="checked"><label for="tipo-celda-vacia">Vacía</label>
+				    <input type="radio" id="tipo-celda-suelo" name="tipo-celda"><label for="tipo-celda-suelo">Suelo</label>
+				    <input type="radio" id="tipo-celda-voxel" name="tipo-celda"><label for="tipo-celda-voxel">Voxel</label>
+				</div>
+  			</div>
+  			<div id="tab-mostrar">
+  				<div>
+  					<input type="checkbox" id="mostrar-rejilla" checked="checked">
+  					<label for="mostrar-rejilla">Rejilla</label>
+  				</div>
+  				<div>
+  					<input type="checkbox" id="mostrar-ejes" checked="checked">
+  					<label for="mostrar-ejes">Ejes</label>
+  				</div>
+  			</div>
+		</div>
+	</div>
+	<canvas id="canvas" width="768" height="480" tabindex="0"></canvas>
+	<p id="cargando">Cargando&hellip;</p>
+	<p id="ayuda">
+		W S A D = mover<br>
+		Q E = girar cámara<br>
+		R F = zoom
+	</p>
+	<script type="text/javascript">
+		main();
+	</script>
+</body>
+</html>

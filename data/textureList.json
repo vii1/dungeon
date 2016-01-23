@@ -1,0 +1,12 @@
+{
+	"stone2": {
+		"file": "stone2_tileable_1024.jpg",
+		"width": 1024,
+		"height": 1024
+	},
+	"pared": {
+		"file": "pared.png",
+		"width": 600,
+		"height": 450
+	}
+}

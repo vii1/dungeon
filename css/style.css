@@ -1,0 +1,29 @@
+body {
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-family: 'Alegreya', serif;
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+	-o-user-select: none; 
+	user-select: none;
+}
+
+#canvas {
+	/*border: 1px solid gray;*/
+	margin: auto;
+}
+
+#mensaje {
+	padding: 0.5em;
+}
+
+#fps {
+	position: absolute;
+	display: inline;
+	left: 2px;
+	top: 1px;
+	font-family: sans-serif;
+	font-size: 11px;
+}

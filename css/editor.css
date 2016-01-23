@@ -1,0 +1,23 @@
+#leftpanel * {
+	font-family: 'Alegreya', serif !important;
+	color: #804000 !important;
+}
+
+#leftpanel a {
+	cursor: pointer;
+}
+
+.leftpanel {
+	float: left;
+	width: 300px;
+	font-size: 12px;
+}
+
+#tab-mapa input,
+#tab-mapa textarea {
+	width: 100%;
+}
+
+#tab-mostrar {
+	text-align: left;
+}
